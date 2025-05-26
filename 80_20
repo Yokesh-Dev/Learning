@@ -1,0 +1,75 @@
+The **80/20 Rule (Pareto Principle)** suggests that 20% of the tools/skills in web development are used 80% of the time. Here’s a breakdown of the **core 20% concepts** for **HTML, CSS, JavaScript, and React** that you should focus on to become productive quickly:
+
+---
+
+## 🔵 HTML – 20% Concepts
+
+These are the fundamental building blocks used constantly:
+
+1. **Semantic tags** (`div`, `span`, `header`, `footer`, `main`, `section`, `article`, `nav`)
+2. **Text formatting tags** (`h1`–`h6`, `p`, `strong`, `em`, `a`)
+3. **Lists** (`ul`, `ol`, `li`)
+4. **Forms** (`form`, `input`, `label`, `button`, `select`, `textarea`)
+5. **Media tags** (`img`, `video`, `audio`)
+6. **Attributes** (`id`, `class`, `src`, `href`, `alt`, `type`, `name`, `value`, `placeholder`, `required`)
+
+---
+
+## 🟣 CSS – 20% Concepts
+
+Core styling techniques that handle the majority of layout and design:
+
+1. **Selectors** (`.class`, `#id`, `element`, `*`, descendant/child selectors)
+2. **Box Model** (margin, border, padding, content)
+3. **Positioning** (`static`, `relative`, `absolute`, `fixed`, `sticky`)
+4. **Flexbox** (`display: flex`, `justify-content`, `align-items`, `flex-direction`)
+5. **Typography** (`font-size`, `font-family`, `line-height`, `text-align`)
+6. **Colors & Backgrounds** (`color`, `background-color`, `background-image`)
+7. **Responsive design** (`media queries`, `viewport units`)
+8. **Common units** (`px`, `em`, `rem`, `%`, `vh`, `vw`)
+
+---
+
+## 🟡 JavaScript – 20% Concepts
+
+These are the key features used in nearly every JS project:
+
+1. **Variables** (`let`, `const`, `var`)
+2. **Data types** (strings, numbers, arrays, objects, booleans)
+3. **Functions** (declaration, expression, arrow functions)
+4. **Conditionals** (`if`, `else`, `switch`)
+5. **Loops** (`for`, `while`, `forEach`, `map`)
+6. **DOM Manipulation** (`querySelector`, `addEventListener`, `innerText`, `value`)
+7. **Events** (`click`, `submit`, `input`, `keydown`)
+8. **ES6+ Features** (spread/rest, destructuring, template literals)
+9. **Array methods** (`map`, `filter`, `reduce`, `find`)
+10. **Promises & async/await**
+
+---
+
+## 🟢 React – 20% Concepts
+
+These essentials cover most of day-to-day React development:
+
+1. **JSX syntax**
+2. **Components** (function components, props)
+3. **useState** (local state management)
+4. **useEffect** (side effects, lifecycle simulation)
+5. **Event handling** (`onClick`, `onChange`)
+6. **Conditional rendering** (`ternary`, `&&`)
+7. **Lists & keys** (`.map()` over data)
+8. **Lifting state up**
+9. **Form handling**
+10. **React Router basics** (`Routes`, `Route`, `useNavigate`)
+
+---
+
+### ✅ Bonus: Tools & Concepts Used Across All
+
+* **DevTools** (Inspect Element, Console)
+* **Version Control** (Git & GitHub basics)
+* **NPM/Yarn**
+* **Responsive/Mobile-first design**
+* **Basic accessibility (a11y)**
+
+---
