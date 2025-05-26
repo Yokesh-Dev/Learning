@@ -1,75 +1,581 @@
-The **80/20 Rule (Pareto Principle)** suggests that 20% of the tools/skills in web development are used 80% of the time. Here’s a breakdown of the **core 20% concepts** for **HTML, CSS, JavaScript, and React** that you should focus on to become productive quickly:
-
----
-
-## 🔵 HTML – 20% Concepts
-
+<h1>🔵 HTML – 20% Concepts</h1>
 These are the fundamental building blocks used constantly:
-
-1. **Semantic tags** (`div`, `span`, `header`, `footer`, `main`, `section`, `article`, `nav`)
-2. **Text formatting tags** (`h1`–`h6`, `p`, `strong`, `em`, `a`)
-3. **Lists** (`ul`, `ol`, `li`)
-4. **Forms** (`form`, `input`, `label`, `button`, `select`, `textarea`)
-5. **Media tags** (`img`, `video`, `audio`)
-6. **Attributes** (`id`, `class`, `src`, `href`, `alt`, `type`, `name`, `value`, `placeholder`, `required`)
-
----
-
-## 🟣 CSS – 20% Concepts
-
+1.	Semantic tags (div, span, header, footer, main, section, article, nav)
+2.	Text formatting tags (h1–h6, p, strong, em, a)
+3.	Lists (ul, ol, li)
+4.	Forms (form, input, label, button, select, textarea)
+5.	Media tags (img, video, audio)
+6.	Attributes (id, class, src, href, alt, type, name, value, placeholder, required)
+________________________________________
+🟣 CSS – 20% Concepts
 Core styling techniques that handle the majority of layout and design:
-
-1. **Selectors** (`.class`, `#id`, `element`, `*`, descendant/child selectors)
-2. **Box Model** (margin, border, padding, content)
-3. **Positioning** (`static`, `relative`, `absolute`, `fixed`, `sticky`)
-4. **Flexbox** (`display: flex`, `justify-content`, `align-items`, `flex-direction`)
-5. **Typography** (`font-size`, `font-family`, `line-height`, `text-align`)
-6. **Colors & Backgrounds** (`color`, `background-color`, `background-image`)
-7. **Responsive design** (`media queries`, `viewport units`)
-8. **Common units** (`px`, `em`, `rem`, `%`, `vh`, `vw`)
-
----
-
-## 🟡 JavaScript – 20% Concepts
-
+1.	Selectors (.class, #id, element, *, descendant/child selectors)
+2.	Box Model (margin, border, padding, content)
+3.	Positioning (static, relative, absolute, fixed, sticky)
+4.	Flexbox (display: flex, justify-content, align-items, flex-direction)
+5.	Typography (font-size, font-family, line-height, text-align)
+6.	Colors & Backgrounds (color, background-color, background-image)
+7.	Responsive design (media queries, viewport units)
+8.	Common units (px, em, rem, %, vh, vw)
+________________________________________
+🟡 JavaScript – 20% Concepts
 These are the key features used in nearly every JS project:
-
-1. **Variables** (`let`, `const`, `var`)
-2. **Data types** (strings, numbers, arrays, objects, booleans)
-3. **Functions** (declaration, expression, arrow functions)
-4. **Conditionals** (`if`, `else`, `switch`)
-5. **Loops** (`for`, `while`, `forEach`, `map`)
-6. **DOM Manipulation** (`querySelector`, `addEventListener`, `innerText`, `value`)
-7. **Events** (`click`, `submit`, `input`, `keydown`)
-8. **ES6+ Features** (spread/rest, destructuring, template literals)
-9. **Array methods** (`map`, `filter`, `reduce`, `find`)
-10. **Promises & async/await**
-
----
-
-## 🟢 React – 20% Concepts
-
+1.	Variables (let, const, var)
+2.	Data types (strings, numbers, arrays, objects, booleans)
+3.	Functions (declaration, expression, arrow functions)
+4.	Conditionals (if, else, switch)
+5.	Loops (for, while, forEach, map)
+6.	DOM Manipulation (querySelector, addEventListener, innerText, value)
+7.	Events (click, submit, input, keydown)
+8.	ES6+ Features (spread/rest, destructuring, template literals)
+9.	Array methods (map, filter, reduce, find)
+10.	Promises & async/await
+________________________________________
+🟢 React – 20% Concepts
 These essentials cover most of day-to-day React development:
+1.	JSX syntax
+2.	Components (function components, props)
+3.	useState (local state management)
+4.	useEffect (side effects, lifecycle simulation)
+5.	Event handling (onClick, onChange)
+6.	Conditional rendering (ternary, &&)
+7.	Lists & keys (.map() over data)
+8.	Lifting state up
+9.	Form handling
+10.	React Router basics (Routes, Route, useNavigate)
 
-1. **JSX syntax**
-2. **Components** (function components, props)
-3. **useState** (local state management)
-4. **useEffect** (side effects, lifecycle simulation)
-5. **Event handling** (`onClick`, `onChange`)
-6. **Conditional rendering** (`ternary`, `&&`)
-7. **Lists & keys** (`.map()` over data)
-8. **Lifting state up**
-9. **Form handling**
-10. **React Router basics** (`Routes`, `Route`, `useNavigate`)
 
----
+Great! Below are HTML interview questions and answers covering the core concepts you listed. These are commonly asked in front-end developer interviews (beginner to mid-level).
+________________________________________
+🔹 Semantic Tags
+1. What are semantic HTML tags?
+Answer:
+Semantic tags clearly describe their meaning in both the browser and to developers. Examples include:
+•	<header>: Introduces the page or section header.
+•	<footer>: Marks the footer for a section or page.
+•	<main>: Denotes the main content of the document.
+•	<section>: Represents a standalone section of content.
+•	<article>: A self-contained, reusable piece (like blog post).
+•	<nav>: Contains navigation links.
+2. Why should we use semantic tags over <div> and <span>?
+Answer:
+Semantic tags improve accessibility, SEO, and code readability. While <div> and <span> are non-semantic, semantic tags help screen readers and search engines better understand the page structure.
+________________________________________
+🔹 Text Formatting Tags
+3. What’s the difference between <strong> and <b>?
+Answer:
+•	<strong> conveys importance and has semantic meaning.
+•	<b> makes text bold but carries no semantic value.
+4. When should you use <em> instead of <i>?
+Answer:
+•	Use <em> to emphasize text, which may affect pronunciation in screen readers.
+•	<i> just italicizes text without adding emphasis or meaning.
+5. What are the uses of <a> tag?
+Answer:
+The <a> tag defines a hyperlink, using the href attribute to link to:
+•	External/internal pages
+•	Sections within the page (using #id)
+•	Email (mailto:), phone (tel:)
+________________________________________
+🔹 Lists
+6. What are the differences between <ul>, <ol>, and <li>?
+Answer:
+•	<ul>: Unordered list with bullet points
+•	<ol>: Ordered list with numbers/letters
+•	<li>: List item, used within <ul> or <ol>
+7. Can lists be nested in HTML?
+Answer:
+Yes, you can nest <ul> or <ol> inside a <li> for multi-level lists.
+________________________________________
+🔹 Forms
+8. What tags are used to create a basic form?
+Answer:
+<form>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Submit</button>
+</form>
+9. What’s the purpose of the name attribute in form inputs?
+Answer:
+It’s the key used to send form data to the server. Without name, input data won't be submitted.
+10. What is the difference between placeholder and value?
+Answer:
+•	placeholder: Temporary hint text in an empty field.
+•	value: Pre-filled value that the user can edit.
+11. What does the required attribute do?
+Answer:
+It prevents form submission if the field is empty. HTML5 handles this validation automatically.
+________________________________________
+🔹 Media Tags
+12. How do you embed an image in HTML?
+Answer:
+<img src="image.jpg" alt="Description of image">
+13. What’s the role of the alt attribute in images?
+Answer:
+•	Provides alternative text for screen readers and SEO
+•	Shown when the image fails to load
+14. How can you embed audio and video in HTML?
+Answer:
+<video src="video.mp4" controls></video>
+<audio src="audio.mp3" controls></audio>
+15. What does the controls attribute do in <audio> and <video> tags?
+Answer:
+It displays play, pause, and volume controls to the user.
+________________________________________
+🔹 Common HTML Attributes
+16. What is the difference between id and class?
+Answer:
+•	id: Unique identifier, used once per page.
+•	class: Can be reused for multiple elements, ideal for styling groups.
+17. What is the purpose of the src and href attributes?
+Answer:
+•	src: Used in tags like <img>, <video>, <script> to define the source of content.
+•	href: Used in <a> or <link> to specify the destination URL.
+18. Can id and class be used together?
+Answer:
+Yes, they can be combined for styling and scripting:
+<div id="header" class="main-section"></div>
+________________________________________
+Absolutely! Here are interview questions and answers covering the essential CSS concepts from the 20% that are used 80% of the time. These are highly relevant for junior to mid-level front-end interviews.
+________________________________________
+🔹 Selectors
+1. What are CSS selectors?
+Answer:
+Selectors are used to target HTML elements to apply styles. Common types:
+•	Element: p, h1
+•	Class: .card
+•	ID: #header
+•	Grouping: h1, p
+•	Descendant: .nav ul li
+2. What’s the difference between . and # in CSS?
+Answer:
+•	. targets class (can be reused): .btn
+•	# targets ID (should be unique): #main
+________________________________________
+🔹 Box Model
+3. Explain the CSS box model.
+Answer:
+Every element is a box consisting of:
+•	Content: Actual text/image
+•	Padding: Space inside the element, around content
+•	Border: Edge around padding
+•	Margin: Space outside the border, between elements
+4. How do padding and margin differ?
+Answer:
+•	padding: Space inside the element
+•	margin: Space outside the element
+________________________________________
+🔹 Positioning
+5. What are the different CSS position values?
+Answer:
+•	static: Default; normal flow
+•	relative: Relative to itself
+•	absolute: Relative to nearest positioned ancestor
+•	fixed: Fixed relative to viewport
+•	sticky: Switches between relative and fixed
+6. When would you use absolute positioning?
+Answer:
+When you need an element to be precisely placed within a parent container with relative positioning.
+________________________________________
+🔹 Flexbox
+7. What is Flexbox and why is it useful?
+Answer:
+Flexbox is a CSS layout module for creating responsive, flexible layouts without float or positioning hacks.
+8. Key properties of Flexbox?
+•	display: flex: Initiates flex container
+•	flex-direction: Row or column layout
+•	justify-content: Horizontal alignment (center, space-between, etc.)
+•	align-items: Vertical alignment (center, flex-start, etc.)
+•	flex-wrap: Allows items to wrap
+•	gap: Adds space between items
+________________________________________
+🔹 Typography
+9. How can you improve readability using CSS typography?
+Answer:
+•	Use readable font-size, line-height, and font-family
+•	Use text-align for layout
+•	Contrast text color and background
+10. What units are commonly used for font sizes?
+Answer:
+•	px: Fixed pixels
+•	em: Relative to parent font size
+•	rem: Relative to root element
+•	%: Relative to parent size
+________________________________________
+🔹 Colors & Backgrounds
+11. How do you apply color in CSS?
+Answer:
+color: #333;          /* text color */
+background-color: #fff; /* background color */
+Supports hex, rgb, rgba, hsl, named colors.
+12. Difference between background-color and background-image?
+Answer:
+•	background-color: Sets a solid background color
+•	background-image: Applies an image as background
+________________________________________
+🔹 Responsive Design
+13. What is a media query in CSS?
+Answer:
+A media query applies CSS conditionally based on screen size, resolution, etc. Example:
+@media (max-width: 768px) {
+  body {
+    background: lightblue;
+  }
+}
+14. What’s mobile-first design?
+Answer:
+Designing for small screens first, then scaling up using media queries for larger screens.
+________________________________________
+🔹 Common Units
+15. Explain the difference between px, em, and rem.
+Answer:
+•	px: Absolute size
+•	em: Relative to parent’s font size
+•	rem: Relative to root font size (html)
+16. What are vh and vw units?
+Answer:
+•	vh: 1% of the viewport height
+•	vw: 1% of the viewport width
+________________________________________
+🔹 Bonus Questions
+17. How do you center an element with Flexbox?
+Answer:
+display: flex;
+justify-content: center;
+align-items: center;
+18. How do inline, block, and inline-block differ?
+Answer:
+•	inline: No width/height; flows in text
+•	block: Takes full width; starts on new line
+•	inline-block: Flows like inline, but can set width/height
+________________________________________
+Absolutely! Here are interview questions and answers for JavaScript covering the 20% concepts that are used 80% of the time. These concepts are commonly tested in junior to mid-level JavaScript developer interviews.
+________________________________________
+🔹 Variables
+1. What’s the difference between var, let, and const?
+Answer:
+•	var: Function-scoped, can be re-declared and updated. It has hoisting.
+•	let: Block-scoped, can be updated but not re-declared in the same block.
+•	const: Block-scoped, cannot be updated or re-declared. Must be assigned a value when declared.
+2. What is hoisting in JavaScript?
+Answer:
+Hoisting is JavaScript’s default behavior of moving variable and function declarations to the top of their containing scope during the compile phase, but not the initializations. For example:
+console.log(x); // undefined
+var x = 5;
+________________________________________
+🔹 Data Types
+3. What are the primitive data types in JavaScript?
+Answer:
+•	undefined, null, boolean, number, string, symbol (ES6), and bigint (ES11)
+4. What is the difference between null and undefined?
+Answer:
+•	undefined: A variable declared but not assigned a value.
+•	null: Represents an intentional absence of value (usually assigned by the developer).
+________________________________________
+🔹 Functions
+5. What is the difference between a function declaration and a function expression?
+Answer:
+•	Function Declaration: Can be called before it’s defined (due to hoisting).
+•	function greet() { console.log("Hello!"); }
+•	Function Expression: Cannot be called before it’s defined.
+•	const greet = function() { console.log("Hello!"); }
+6. What are arrow functions?
+Answer:
+Arrow functions provide a shorter syntax and do not have their own this, instead, they inherit this from the parent context.
+const add = (a, b) => a + b;
+________________________________________
+🔹 Conditionals
+7. What’s the difference between == and ===?
+Answer:
+•	==: Compares values with type coercion.
+•	===: Compares both value and type without type coercion.
+8. What are if and switch statements in JavaScript?
+Answer:
+•	if: Used for conditional checks.
+•	switch: Used when there are multiple conditions to evaluate, better suited for multiple values of the same variable.
+if (x > 10) {
+  console.log("x is greater than 10");
+} else if (x < 10) {
+  console.log("x is less than 10");
+} else {
+  console.log("x is equal to 10");
+}
+________________________________________
+🔹 Loops
+9. What is the difference between for, while, and forEach?
+Answer:
+•	for: Used when you know the number of iterations.
+•	while: Loops while a condition is true, useful when you don’t know the exact number of iterations.
+•	forEach: A method for arrays to loop over elements (no control over the loop’s flow like break or continue).
+for (let i = 0; i < 5; i++) { console.log(i); } // 0 to 4
+________________________________________
+🔹 Arrays
+10. How can you loop through an array in JavaScript?
+Answer:
+•	Using for loop:
+•	const arr = [1, 2, 3];
+•	for (let i = 0; i < arr.length; i++) {
+•	  console.log(arr[i]);
+•	}
+•	Using forEach:
+•	arr.forEach(item => console.log(item));
+11. What is the purpose of map(), filter(), and reduce()?
+Answer:
+•	map(): Creates a new array by transforming each element.
+•	const arr = [1, 2, 3];
+•	const doubled = arr.map(x => x * 2);  // [2, 4, 6]
+•	filter(): Creates a new array with elements that pass the condition.
+•	const arr = [1, 2, 3, 4];
+•	const even = arr.filter(x => x % 2 === 0);  // [2, 4]
+•	reduce(): Reduces an array to a single value.
+•	const arr = [1, 2, 3];
+•	const sum = arr.reduce((acc, curr) => acc + curr, 0);  // 6
+________________________________________
+🔹 Objects
+12. What is an object in JavaScript?
+Answer:
+An object is a collection of key-value pairs, where keys are strings (or Symbols) and values can be any data type.
+const person = { name: "John", age: 30 };
+13. How can you access object properties?
+Answer:
+•	Dot notation: person.name
+•	Bracket notation: person["name"]
+14. What is object destructuring?
+Answer:
+Object destructuring allows you to extract values from objects into variables.
+const person = { name: "John", age: 30 };
+const { name, age } = person;  // name = "John", age = 30
+________________________________________
+🔹 Asynchronous JavaScript
+15. What are Promises in JavaScript?
+Answer:
+A Promise is an object representing the eventual completion (or failure) of an asynchronous operation.
+let promise = new Promise((resolve, reject) => {
+  let success = true;
+  if(success) resolve("Success!");
+  else reject("Failure!");
+});
+16. What is async/await in JavaScript?
+Answer:
+async/await is a cleaner way to work with asynchronous code:
+•	async makes a function return a Promise.
+•	await waits for the Promise to resolve/reject before moving on.
+async function getData() {
+  let data = await fetch("https://api.example.com");
+  let json = await data.json();
+  console.log(json);
+}
+________________________________________
+🔹 Array Methods
+17. What is the purpose of find(), some(), and every()?
+Answer:
+•	find(): Returns the first element in the array that satisfies a condition.
+•	const arr = [1, 2, 3, 4];
+•	const found = arr.find(x => x > 2);  // 3
+•	some(): Checks if any elements satisfy a condition.
+•	const arr = [1, 2, 3];
+•	const hasEven = arr.some(x => x % 2 === 0);  // true
+•	every(): Checks if all elements satisfy a condition.
+•	const arr = [2, 4, 6];
+•	const allEven = arr.every(x => x % 2 === 0);  // true
+________________________________________
+🔹 ES6+ Features
+18. What is template literal in JavaScript?
+Answer:
+Template literals allow embedding expressions inside strings using backticks (`) and ${} for interpolation.
+let name = "Alice";
+let greeting = `Hello, ${name}!`;  // "Hello, Alice!"
+19. What is the spread operator?
+Answer:
+The spread operator (...) allows an iterable (e.g., array or object) to be expanded into individual elements/values.
+const arr1 = [1, 2];
+const arr2 = [...arr1, 3, 4];  // [1, 2, 3, 4]
+________________________________________
+Sure! Below are React interview questions and answers covering the 20% core concepts that are used 80% of the time in React development. These concepts are crucial for junior to mid-level React developers.
+________________________________________
+🔹 JSX (JavaScript XML)
+1. What is JSX?
+Answer:
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files. It’s used to describe what the UI should look like. Under the hood, JSX is compiled into React.createElement() calls.
+Example:
+const element = <h1>Hello, world!</h1>;
+2. What happens when JSX code is compiled?
+Answer:
+JSX is transformed into React.createElement() calls. Each JSX element becomes a JavaScript object, representing a virtual DOM element, which React uses to optimize updates to the real DOM.
+________________________________________
+🔹 Components
+3. What are React components?
+Answer:
+Components are the building blocks of a React application. A component is a function or class that optionally accepts inputs (called props) and returns a React element (a description of the UI).
+•	Functional components: Stateless components defined using functions.
+•	Class components: Stateful components defined using ES6 classes (older method, now less common with hooks).
+Example of a functional component:
+const Welcome = (props) => <h1>Hello, {props.name}</h1>;
+________________________________________
+🔹 Props
+4. What are props in React?
+Answer:
+Props (short for "properties") are inputs passed to components from their parent. They allow data to flow from one component to another in a unidirectional manner.
+Example:
+const Greeting = (props) => <h1>Hello, {props.name}</h1>;
+5. Can you modify props in a component?
+Answer:
+No, props are immutable. You cannot modify the props directly inside a component. If you need to modify data, you should pass it to the parent component and let the parent update the state.
+________________________________________
+🔹 State
+6. What is state in React?
+Answer:
+State is a JavaScript object that stores dynamic data in a component. Unlike props, state is mutable and can be updated within the component.
+State is used to track changes over time (e.g., user inputs, clicks, API responses).
+Example:
+const Counter = () => {
+  const [count, setCount] = useState(0);
+  
+  return (
+    <div>
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+};
+7. What is the difference between props and state?
+Answer:
+•	Props: Passed to the component from the parent, immutable inside the component.
+•	State: Managed within the component itself, mutable, and can be updated.
+________________________________________
+🔹 useState Hook
+8. What is the useState hook in React?
+Answer:
+useState is a hook that allows you to add state to functional components. It returns an array with two elements:
+1.	The current state value.
+2.	A function to update the state.
+Example:
+const [count, setCount] = useState(0);
+________________________________________
+🔹 useEffect Hook
+9. What is the useEffect hook in React?
+Answer:
+useEffect is a hook that allows you to perform side effects (like data fetching, DOM manipulation, or subscribing to external data sources) in functional components. It’s the equivalent of lifecycle methods (like componentDidMount, componentDidUpdate, componentWillUnmount in class components).
+Example:
+useEffect(() => {
+  document.title = `Count: ${count}`;
+}, [count]);  // Only runs when `count` changes
+________________________________________
+🔹 Event Handling
+10. How do you handle events in React?
+Answer:
+React uses a synthetic event system. Event names in React are camelCased (e.g., onClick, onChange). The event handlers are passed as function references.
+Example:
+const handleClick = () => {
+  console.log("Button clicked!");
+};
 
-### ✅ Bonus: Tools & Concepts Used Across All
+return <button onClick={handleClick}>Click me</button>;
+11. How do you pass parameters to an event handler in React?
+Answer:
+You can pass parameters to an event handler using an arrow function or by calling the handler inside the JSX code.
+Example:
+const handleClick = (id) => {
+  console.log(`Button with id ${id} clicked`);
+};
 
-* **DevTools** (Inspect Element, Console)
-* **Version Control** (Git & GitHub basics)
-* **NPM/Yarn**
-* **Responsive/Mobile-first design**
-* **Basic accessibility (a11y)**
+return <button onClick={() => handleClick(1)}>Click me</button>;
+________________________________________
+🔹 Conditional Rendering
+12. How does conditional rendering work in React?
+Answer:
+You can conditionally render elements using JavaScript expressions inside JSX. Common methods:
+•	Ternary operator:
+•	const isLoggedIn = true;
+•	return isLoggedIn ? <p>Welcome</p> : <p>Please log in</p>;
+•	Logical AND (&&):
+•	const showMessage = true;
+•	return showMessage && <p>Message shown</p>;
+________________________________________
+🔹 Lists and Keys
+13. What is the purpose of key in lists in React?
+Answer:
+The key is a special prop used to uniquely identify elements in a list. It helps React optimize re-rendering by keeping track of elements between renders.
+Example:
+const listItems = [1, 2, 3];
+return (
+  <ul>
+    {listItems.map(item => <li key={item}>{item}</li>)}
+  </ul>
+);
+________________________________________
+🔹 React Router
+14. What is React Router?
+Answer:
+React Router is a library that enables navigation and routing in single-page React applications (SPAs). It allows you to define different routes for different components based on the URL path.
+Basic example:
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
----
+const Home = () => <h2>Home Page</h2>;
+const About = () => <h2>About Page</h2>;
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </nav>
+      <Route path="/" exact component={Home} />
+      <Route path="/about" component={About} />
+    </Router>
+  );
+}
+________________________________________
+🔹 State Lifting
+15. What is lifting state up in React?
+Answer:
+Lifting state up is the process of moving state from a child component to its parent component in order to share data between sibling components.
+Example:
+const Parent = () => {
+  const [data, setData] = useState("");
+
+  return (
+    <div>
+      <Child setData={setData} />
+      <p>{data}</p>
+    </div>
+  );
+};
+
+const Child = ({ setData }) => {
+  return <button onClick={() => setData("New data")}>Change Data</button>;
+};
+________________________________________
+🔹 Context API
+16. What is the Context API in React?
+Answer:
+The Context API is a way to pass data through the component tree without having to pass props down manually at every level. It’s useful for global state management (e.g., user authentication, theme).
+Example:
+const ThemeContext = React.createContext();
+
+const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <Child />
+    </ThemeContext.Provider>
+  );
+};
+
+const Child = () => {
+  const theme = useContext(ThemeContext);
+  return <div>The current theme is {theme}</div>;
+};
+________________________________________
+🔹 React Performance Optimization
+17. What are React memoization techniques to improve performance?
+Answer:
+•	React.memo(): Optimizes functional components by memoizing the output and preventing unnecessary re-renders.
+•	const MyComponent = React.memo((props) => {
+•	  return <p>{props.value}</p>;
+•	});
+•	useMemo(): Memoizes values inside functional components to prevent recalculating values on every render.
+•	useCallback(): Memoizes functions to avoid re-creating them on each render.
+________________________________________
